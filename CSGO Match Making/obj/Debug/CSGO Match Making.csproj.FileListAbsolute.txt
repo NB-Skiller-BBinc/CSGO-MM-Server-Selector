@@ -1,0 +1,8 @@
+D:\Projects\CSGO Match Making\CSGO Match Making\bin\Debug\CSGO Match Making.exe.config
+D:\Projects\CSGO Match Making\CSGO Match Making\bin\Debug\CSGO Match Making.exe
+D:\Projects\CSGO Match Making\CSGO Match Making\bin\Debug\CSGO Match Making.pdb
+D:\Projects\CSGO Match Making\CSGO Match Making\obj\Debug\CSGO_Match_Making.Properties.Resources.resources
+D:\Projects\CSGO Match Making\CSGO Match Making\obj\Debug\CSGO Match Making.csproj.GenerateResource.Cache
+D:\Projects\CSGO Match Making\CSGO Match Making\obj\Debug\CSGO Match Making.exe
+D:\Projects\CSGO Match Making\CSGO Match Making\obj\Debug\CSGO Match Making.pdb
+D:\Projects\CSGO Match Making\CSGO Match Making\obj\Debug\CSGO_Match_Making.Main.resources
