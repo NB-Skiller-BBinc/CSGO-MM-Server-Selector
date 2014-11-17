@@ -44,6 +44,13 @@ namespace CSGO_Match_Making
 
             p.Kill();
 
+
+            foreach (Control c in this.Controls)
+            {
+                if (CSGO_Match_Making.Properties.Settings.Default.Blocked.Contains(c.Name))
+                    ((CheckBox)c).Checked = false;
+            }
+
             Servers.AddRange(new Server[] {
                 new Server { Address = "syd.valve.net", Name = "Sydney" },
                 new Server { Address = "dxb.valve.net", Name = "Dubai" },
@@ -60,7 +67,7 @@ namespace CSGO_Match_Making
 
             CheckPings();
 
-            Timer pings = new Timer { Interval = 10000 };
+            Timer pings = new Timer { Interval = 5000 };
             pings.Tick += (se, e) => { CheckPings(); };
             pings.Start();
         }
