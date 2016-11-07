@@ -62,22 +62,34 @@ namespace CSGO_Match_Making
              * Adding all the servers plus names.
              */
             Servers.AddRange(new Server[] {
-                new Server { Address = "syd.valve.net", Name = "Sydney" },
-                new Server { Address = "dxb.valve.net", Name = "Dubai" },
-                new Server { Address = "sto.valve.net", Name = "Russia" },
-                new Server { Address = "vie.valve.net", Name = "Vienna" },
-                new Server { Address = "lux.valve.net", Name = "Luxembourg" },
-                new Server { Address = "208.78.164.1", Name = "Sterling" },
-                new Server { Address = "eat.valve.net", Name = "Seattle" },
-                new Server { Address = "sgp-1.valve.net", Name = "Singapore" },
+
+                new Server { Address = "syd.valve.net", Name = "Sydney" }, //SYD
+
+                new Server { Address = "dxb.valve.net", Name = "Dubai" }, //DXB
+
+                new Server { Address = "sto.valve.net", Name = "Russia" }, //STO
+
+                new Server { Address = "vie.valve.net", Name = "Vienna" }, //VIE
+
+                new Server { Address = "146.66.154.20", Name = "Luxembourg" }, //LUX
+
+                new Server { Address = "208.78.164.1", Name = "Sterling" }, //IAD
+
+                new Server { Address = "eat.valve.net", Name = "Seattle" }, //EAT
+
+                new Server { Address = "sgp-1.valve.net", Name = "Singapore" }, //SGP
+
                 new Server { Address = "197.80.200.1", Name = "Africa" },
+
                 new Server { Address = "gru.valve.net", Name = "Brazil" },
+
                 new Server { Address = "116.202.224.146", Name = "India" }
+
             });
 
             CheckPings(); // Initial ping check
 
-            Timer pings = new Timer { Interval = 5000 }; // Create the timer that'll tick every 5 seconds
+            Timer pings = new Timer { Interval = 10000 }; // Create the timer that'll tick every 10 seconds
             pings.Tick += (se, e) => { CheckPings(); }; // On the event of a new tick, CheckPings() will be ran. Note, used Lambda Expression just to give an example of how it can be used.
             pings.Start(); // Start the timer.
         }
@@ -124,39 +136,39 @@ namespace CSGO_Match_Making
                         break;
 
                     case "russia":
-                        Range = "146.66.156.0-146.66.156.255,146.66.157.0-146.66.157.255,185.25.180.0-185.25.180.255,185.25.181.0-185.25.181.255";
+                        Range = "146.66.156.0-146.66.156.255,146.66.157.0-146.66.157.255,185.25.180.0-185.25.180.255,185.25.1.0-185.25.181.255,162.254.198.0-162.254.198.255,155.133.242.0-155.133.242.255";
                         break;
 
                     case "brazil":
-                        Range = "209.197.29.0-209.197.29.255,209.197.25.0-209.197.25.255,205.185.194.0-205.185.194.255";
+                        Range = "209.197.29.0-209.197.29.255,209.197.25.0-209.197.25.255,205.185.194.0-205.185.194.255,190.216.121.0-190.216.121.255,155.133.249.0-155.133.249.255,190.217.33.0-190.217.33.255,205.185.194.0-205.185.194.255";
                         break;
 
                     case "india":
-                        Range = "180.149.41.0-180.149.41.255,116.202.224.146";
+                        Range = "180.149.41.0-180.149.41.255,116.202.224.146,208.64.200.0-208.64.200.255,185.25.183.0-185.25.183.255";
                         break;
 
                     case "sterling":
-                        Range = "208.78.164.0-208.78.164.255,208.78.165.0-208.78.165.255,208.78.166.0-208.78.166.255";
+                        Range = "208.78.164.0-208.78.164.255,208.78.165.0-208.78.165.255,208.78.166.0-208.78.166.255,162.254.199.0-162.254.199.255,162.254.192.0-162.254.192.255,162.254.193.0-162.254.193.255";
                         break;
 
                     case "seattle":
-                        Range = "192.69.96.0-192.69.96.255,192.69.97.0-192.69.97.255";
+                        Range = "192.69.96.0-192.69.96.255,192.69.97.0-192.69.97.255,162.254.194.0-162.254.194.255,162.254.199.0-162.254.199.255,192.69.97.0-192.69.97.255,162.254.195.0-162.254.195.255,205.196.6.0-205.196.6.255";
                         break;
 
                     case "vienna":
-                        Range = "146.66.155.0-146.66.155.255,185.25.182.0-185.25.182.255";
+                        Range = "146.66.155.0-146.66.155.255,185.25.182.0-185.25.182.255,208.64.200.0-208.64.200.255";
                         break;
 
-                    case "Luxembourg":
-                        Range = "146.66.152.0-146.66.152.255,146.66.158.0-146.66.158.255,146.66.159.0-146.66.159.255";
+                    case "luxembourg":
+                        Range = "146.66.152.0-146.66.152.255,146.66.158.0-146.66.158.255,146.66.159.0-146.66.159.255,155.133.244.0-155.133.244.255,155.133.249.0-155.133.249.255,155.133.247.0-155.133.247.255,146.66.154.0-146.66.154.255,162.254.196.0-162.254.196.255,162.254.197.0-162.254.197.255,155.133.253.0-155.133.253.255,155.133.246.0-155.133.246.255,155.133.248.0-155.133.248.255";
                         break;
 
                     case "singapore":
-                        Range = "103.28.54.0-103.28.54.255,103.28.55.0-103.28.55.255,103.10.124.0-103.10.124.255";
+                        Range = "103.28.54.0-103.28.54.255,103.28.55.0-103.28.55.255,103.10.124.0-103.10.124.255,45.121.184.0-45.121.184.255,45.121.187.0-45.121.187.255,155.133.239.0-155.133.239.255,155.133.239.0-155.133.239.255,153.254.86.0-153.254.86.255,103.10.124.0-103.10.124.255";
                         break;
 
                     case "africa":
-                        Range = "152.111.192.0-152.111.192.255,197.80.200.0-197.80.200.255,196.38.180.0-196.38.180.255";
+                        Range = "152.111.192.0-152.111.192.255,197.80.200.0-197.80.200.255,196.38.180.0-196.38.180.255,197.80.4.0-197.80.4.255";
                         break;
                 }
 
@@ -194,6 +206,11 @@ namespace CSGO_Match_Making
 
             checkBox.Text = checkBox.Checked ? "Unblocked" : "Blocked"; // Setting the checkbox text depending on the current check state, pretty much an if else statement returning a value. 'if (checkBox.Checked) checkBox.Text = "Unblocked" else checkBox.Text = "Blocked"'
             checkBox.BackColor = checkBox.Checked ? Color.FromArgb(34, 127, 0) : Color.FromArgb(175, 0, 0); // Same as above, returning a value depending on check state. 'if (checkBox.Checked) checkBox.BackColor = Green else checkBox.BackColor = Red'
+        }
+
+        private void Main_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
