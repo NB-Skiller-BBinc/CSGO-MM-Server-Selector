@@ -7,3 +7,13 @@ C:\Users\link2\Desktop\CSGO-MM-Server-Selector\CSGO Match Making\obj\Release\CSG
 C:\Users\link2\Desktop\CSGO-MM-Server-Selector\CSGO Match Making\obj\Release\CSGO Match Making.csproj.GenerateResource.Cache
 C:\Users\link2\Desktop\CSGO-MM-Server-Selector\CSGO Match Making\obj\Release\CSGO Match Making.exe
 C:\Users\link2\Desktop\CSGO-MM-Server-Selector\CSGO Match Making\obj\Release\CSGO Match Making.pdb
+C:\Users\link2x\Documents\GitHub\CSGO-MM-Server-Selector\CSGO Match Making\bin\Release\CSGO Match Making.exe.config
+C:\Users\link2x\Documents\GitHub\CSGO-MM-Server-Selector\CSGO Match Making\bin\Release\CSGO Match Making.exe
+C:\Users\link2x\Documents\GitHub\CSGO-MM-Server-Selector\CSGO Match Making\bin\Release\CSGO Match Making.pdb
+C:\Users\link2x\Documents\GitHub\CSGO-MM-Server-Selector\CSGO Match Making\obj\Release\CSGO Match Making.csprojAssemblyReference.cache
+C:\Users\link2x\Documents\GitHub\CSGO-MM-Server-Selector\CSGO Match Making\obj\Release\CSGO_Match_Making.Main.resources
+C:\Users\link2x\Documents\GitHub\CSGO-MM-Server-Selector\CSGO Match Making\obj\Release\CSGO_Match_Making.Properties.Resources.resources
+C:\Users\link2x\Documents\GitHub\CSGO-MM-Server-Selector\CSGO Match Making\obj\Release\CSGO Match Making.csproj.GenerateResource.cache
+C:\Users\link2x\Documents\GitHub\CSGO-MM-Server-Selector\CSGO Match Making\obj\Release\CSGO Match Making.csproj.CoreCompileInputs.cache
+C:\Users\link2x\Documents\GitHub\CSGO-MM-Server-Selector\CSGO Match Making\obj\Release\CSGO Match Making.exe
+C:\Users\link2x\Documents\GitHub\CSGO-MM-Server-Selector\CSGO Match Making\obj\Release\CSGO Match Making.pdb

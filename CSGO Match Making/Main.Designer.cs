@@ -61,6 +61,7 @@
             this.brazilPing = new System.Windows.Forms.Label();
             this.sterlingPing = new System.Windows.Forms.Label();
             this.seattlePing = new System.Windows.Forms.Label();
+            this.pingwarning = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -548,6 +549,18 @@
             this.seattlePing.Text = "~";
             this.seattlePing.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // pingwarning
+            // 
+            this.pingwarning.AutoSize = true;
+            this.pingwarning.BackColor = System.Drawing.Color.Transparent;
+            this.pingwarning.ForeColor = System.Drawing.Color.Orange;
+            this.pingwarning.Location = new System.Drawing.Point(12, 9);
+            this.pingwarning.Name = "pingwarning";
+            this.pingwarning.Size = new System.Drawing.Size(51, 13);
+            this.pingwarning.TabIndex = 36;
+            this.pingwarning.Text = "Pinging...";
+            this.pingwarning.Visible = false;
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -555,6 +568,7 @@
             this.BackgroundImage = global::CSGO_Match_Making.Properties.Resources.BackgroundEarth1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(928, 582);
+            this.Controls.Add(this.pingwarning);
             this.Controls.Add(this.seattlePing);
             this.Controls.Add(this.sterlingPing);
             this.Controls.Add(this.brazilPing);
@@ -635,6 +649,7 @@
         private System.Windows.Forms.Label brazilPing;
         private System.Windows.Forms.Label sterlingPing;
         private System.Windows.Forms.Label seattlePing;
+        private System.Windows.Forms.Label pingwarning;
     }
 }
 
